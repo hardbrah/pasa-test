@@ -3,3 +3,8 @@ flash-attn
 wandb
 rich
 lxml
+streamlit
+fastapi
+uvicorn
+openai
+langchain-huggingface

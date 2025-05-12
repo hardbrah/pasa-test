@@ -8,5 +8,5 @@
 /log
 /trl
 /transformers
-scripts/download_baseModel.py
-scripts/downloadWeights.py
+/scripts/download_baseModel.py
+/scripts/downloadWeights.py

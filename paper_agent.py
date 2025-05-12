@@ -101,6 +101,7 @@ class PaperAgent:
                     self.root.extra["crawler_recall_papers"].append(paper["title"])
                     if score > 0.5:
                         self.root.extra["recall_papers"].append(paper["title"])
+                        self.root.extra["recall_papers_id"].append(paper["arxiv_id"])
                     paper_node = PaperNode({
                         "title":        paper["title"],
                         "arxiv_id":     paper["arxiv_id"],
@@ -186,6 +187,7 @@ class PaperAgent:
                 self.root.extra["crawler_recall_papers"].append(ref_paper["title"])
                 if score > 0.5:
                     self.root.extra["recall_papers"].append(ref_paper["title"])
+                    self.root.extra["recall_papers_id"].append(ref_paper["arxiv_id"])
                 paper_node = PaperNode({
                     "title":        ref_paper["title"],
                     "depth":        depth + 1,
